@@ -9,8 +9,6 @@ function fts_pagination_url_outbound_alter(&$path, &$options, $original_path) {
 	}
 }
 
-
-
 // вывод контента на страницах
 function fts_pagination_url_inbound_alter(&$path, $original_path, $path_language) {
 	global $_GET;
@@ -26,7 +24,6 @@ function fts_pagination_url_inbound_alter(&$path, $original_path, $path_language
 			// переменная в пост для проверки переадресации
 			$_POST['custompagination'] = TRUE;
 	}
-	
 	// переадресация 301 при нахождении пользователя на ?page=
 	if (!isset($_POST['custompagination'] )) {
 		if (isset($_GET['page'])) {
