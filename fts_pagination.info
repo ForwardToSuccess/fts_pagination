@@ -1,0 +1,5 @@
+name = FTS pagination
+description = Пагинация в views
+package = FTS
+core = 7.x
+
